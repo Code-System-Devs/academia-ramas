@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+    <title>MAESTROS</title>
+
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  
+
+    
+</head>
+<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+			<header  id="header">
+						<a class="btn btn-light btn-xs"
+						th:href="@{'/login/'}"
+						th:text="'&laquo; volver'"></a>
+
+				<!-- Header -->
+					
+						
+						<h1>LISTADO DE MAESTROS</h1>
+						<p  style="background-color:darkred;">MAESTRO &nbsp;&bull;&nbsp; ALUMNOS &nbsp;&bull;&nbsp; COMPROMISO</p>
+						
+						  <div class="col-sm-8">
+					  
+						  
+      <h2 style="background-color:black;">Nuestros Valores</h2><br>
+      <h4  style="background-color:black;"><strong >MISION:</strong></h4>
+                                        <p  style="background-color:blue;" > Brindar a nuestros clientes un ambiente agradable y excelente servicio.
+                                        <br > Apoyar en la optimizacion de los costos y calidad de los productos que distribuimos.
+                                        <br > Impulsar el desarrollo de los guatemaltecos.</p>
+      <h4  style="background-color:black;"><strong>VISION:</strong></h4>
+                                        <p style="background-color:blue;">Ser el distribuidor de materiales de construccion y ferreteros referente del 
+departamento de Huehuetenango, ayudando a los huehuetecos a cumplir sus sueños de construir un hogar, 
+brindando facilidades a traves de empresas lider como Cementos Progreso, Aceros de Guatemala y muchas mas.</p>
+    </div>
+  </div>
+</div>
+						
+						
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">DISTRIBUIDORA #1</a>.</span>
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
